@@ -6,7 +6,6 @@ export const Header = (props) => {
     const wishlistPrice = useSelector(({wishlist: {price}}) => price);
     const cart = useSelector(({cart: {cart}}) => cart);
     const cartPrice = useSelector(({cart: {price}}) => price);
-
     return (
         <header className={'d-flex justify-between align-center'}>
             <h1>MyShop</h1>

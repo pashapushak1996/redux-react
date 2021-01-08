@@ -12,10 +12,11 @@ const reducer = (state = initialState, action) => {
             if (updatedCart.length === state.cart.length) {
                 updatedCart.push(action.payload);
             }
+
             const price = updatedCart.reduce((acc, value) => {
                 return acc + value.price
             }, 0)
-            return {...state, cart: updatedCart,price: price}
+            return {...state, cart: updatedCart, price: price}
         }
         default: {
             return state;
